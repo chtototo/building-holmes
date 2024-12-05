@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: Montserrat;
+        font-weight: 700;
+    }
+}
+
+#app {
+    @apply w-full relative h-[100%]
+}
+
+body {
+    @apply overflow-x-hidden h-[100vh]
+}
+
+body::-webkit-scrollbar {
+    @apply w-[12px]
+}
+
+body::-webkit-scrollbar-track {
+    @apply bg-transparent
+}
+
+body::-webkit-scrollbar-thumb {
+    @apply bg-zinc-700 rounded-full
+}
+
+.builtHouse {
+    @apply opacity-[1]
+}
+
+.buildingHouse {
+    @apply opacity-[.3]
+}
+
+.btn {
+    @apply uppercase text-white px-[60px] py-[20px] rounded bg-gradient-to-r from-blue-500 to-emerald-500 shadow-[-20px_0px_50px_-10px_#3b82f6,20px_0px_50px_-10px_#10b981] transition-[.5s] w-fit h-fit
+}
